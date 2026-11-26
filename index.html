@@ -235,23 +235,42 @@ if (typeof document !== "undefined") {
   }
 
 
-const HQ_FRANCISCO = [
-  ["img/quadro1.webp","Os passarinhos","Num campo florido, Francisco falou aos passarinhos sobre o amor de Deus. Eles ficaram quietinhos, ouvindo, e só voaram depois da bênção."],
-  ["img/quadro2.webp","O lobo de Gubbio","Um lobo assustava a cidade de Gubbio. Francisco foi conversar com ele sem medo, e o lobo ficou manso e virou amigo de todos."],
-  ["img/quadro3.webp","Os pobres","Francisco deixou suas riquezas para viver com simplicidade. Repartia o pão com quem tinha fome, sempre com um sorriso."],
-  ["img/quadro4.webp","O presépio de Greccio","Num Natal, em Greccio, ele montou o primeiro presépio, com boi e burrinho de verdade, para todos verem como Jesus nasceu pobrezinho."]
-];
+// Histórias em quadrinhos por santo (o nome é o mesmo de PERFIS). Para um santo novo, acrescente uma chave com 4 quadros:
+// [imagem, título, legenda]. Fontes de cada cena em historias.md.
+const HISTORIAS = {
+  "São Francisco de Assis": [
+    ["img/quadro1.webp","Os passarinhos","Num campo florido, Francisco falou aos passarinhos sobre o amor de Deus. Eles ficaram quietinhos, ouvindo, e só voaram depois da bênção."],
+    ["img/quadro2.webp","O lobo de Gubbio","Um lobo assustava a cidade de Gubbio. Francisco foi conversar com ele sem medo, e o lobo ficou manso e virou amigo de todos."],
+    ["img/quadro3.webp","Os pobres","Francisco deixou suas riquezas para viver com simplicidade. Repartia o pão com quem tinha fome, sempre com um sorriso."],
+    ["img/quadro4.webp","O presépio de Greccio","Num Natal, em Greccio, ele montou o primeiro presépio, com boi e burrinho de verdade, para todos verem como Jesus nasceu pobrezinho."]
+  ],
+  "Santa Clara": [
+    ["img/clara1.webp","Tudo por Jesus","Numa noite de Domingo de Ramos, Clara deixou a casa rica da família e foi à capelinha da Porciúncula. Lá, Francisco e os frades a receberam, e ela vestiu um hábito simples para seguir Jesus."],
+    ["img/clara2.webp","A vida em São Damião","Clara e as irmãs viviam numa casinha pobre junto da igreja de São Damião. Rezavam, cuidavam da horta e repartiam o pouco que tinham, sempre alegres."],
+    ["img/clara3.webp","Jesus protege o convento","Um dia, soldados quiseram entrar no convento. Clara levou Jesus Eucarístico até a porta e rezou com confiança, e os soldados foram embora."],
+    ["img/clara4.webp","A missa de Natal","Numa noite de Natal, Clara estava doente e não pôde ir à missa. Mesmo de longe, Deus deixou que ela visse e ouvisse a celebração. Por isso ela é a padroeira da televisão."]
+  ],
+  "São Bento": [
+    ["img/bento1.webp","A gruta de Subiaco","Quando era jovem, Bento foi rezar sozinho numa gruta, no alto de um lago, em Subiaco. Um monge bondoso chamado Romano levava comida para ele."],
+    ["img/bento2.webp","Reza e trabalha","Bento escreveu uma Regra para os monges: rezar juntos e trabalhar com alegria, na horta, na cozinha e nos livros. É o famoso “ora et labora”."],
+    ["img/bento3.webp","O mosteiro de Monte Cassino","Bento subiu o Monte Cassino e, lá no alto, construiu com os monges um grande mosteiro, uma casa para rezar e acolher quem chegava."],
+    ["img/bento4.webp","O corvo amigo","Todo dia, um corvo vinha do bosque na hora do almoço, e o próprio Bento lhe dava de comer. Até os bichos sentiam a bondade dele."]
+  ]
+};
+const HISTORIA_PADRAO = "São Francisco de Assis";
 
 function quadrinhos(rTopo){
   const filho = sexo === "f" ? "sua filha" : "seu filho";
+  const santo = santoDe(rTopo[0], sexo);
+  const tem = !!HISTORIAS[santo];
+  const nomeHq = tem ? santo : HISTORIA_PADRAO;
   const sec = el("section","hq");
-  sec.appendChild(el("h3",null,"Uma criança acompanhou São Francisco nesta história..."));
-  sec.appendChild(el("p","intro","Mas quem era ela? Olhe o lugar guardado ao lado do santo em cada quadro."));
-  const ehFrancisco = rTopo.length === 1 && rTopo[0] === "criacao" && sexo !== "f";
-  if (!ehFrancisco) sec.appendChild(el("span","previa","Prévia: por enquanto mostramos a história de São Francisco de Assis. A do santo de " + (sexo === "f" ? "sua filha" : "seu filho") + " vem em breve."));
-  HQ_FRANCISCO.forEach(([src, tit, leg], k) => {
+  sec.appendChild(el("h3",null,"Uma criança acompanhou " + nomeHq + " nesta história..."));
+  sec.appendChild(el("p","intro","Mas quem era ela? Olhe o lugar guardado ao lado " + (/^Santa /.test(nomeHq) ? "da santa" : "do santo") + " em cada quadro."));
+  if (!tem) sec.appendChild(el("span","previa","Prévia: por enquanto mostramos a história de " + HISTORIA_PADRAO + ". A história de " + santo + " vem em breve."));
+  HISTORIAS[nomeHq].forEach(([src, tit, leg], k) => {
     const f = el("figure","quadro");
-    const img = el("img"); img.src = src; img.alt = "Quadro " + (k+1) + ": " + tit + ", com o espaço vazio da criança ao lado de São Francisco";
+    const img = el("img"); img.src = src; img.alt = "Quadro " + (k+1) + ": " + tit + ", com o espaço vazio da criança ao lado de " + nomeHq;
     img.width = 768; img.height = 768; img.loading = k === 0 ? "eager" : "lazy";
     f.appendChild(img);
     const c = el("figcaption"); c.appendChild(el("b",null,(k+1) + ". " + tit + ". ")); c.appendChild(document.createTextNode(leg));
@@ -259,7 +278,7 @@ function quadrinhos(rTopo){
   });
   const of = el("div","oferta");
   of.appendChild(el("h3",null,"Coloque " + filho + " nesta história"));
-  of.appendChild(el("p",null,"Você envia uma foto e " + (sexo === "f" ? "ela aparece" : "ele aparece") + " ilustrad" + (sexo === "f" ? "a" : "o") + " ao lado do santo, no lugar do ponto de interrogação."));
+  of.appendChild(el("p",null,"Você envia uma foto e " + (sexo === "f" ? "ela aparece" : "ele aparece") + " ilustrad" + (sexo === "f" ? "a" : "o") + " ao lado " + (/^Santa /.test(nomeHq) ? "da santa" : "do santo") + ", no lugar do ponto de interrogação."));
   of.appendChild(el("p","preco","R$ 7"));
   const bt = el("button","primario","Quero " + (sexo === "f" ? "minha filha" : "meu filho") + " na história"); bt.type = "button";
   const msg = el("div","breve","Em breve! Estamos preparando essa novidade com muito carinho."); msg.hidden = true; msg.setAttribute("role","status");
