@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Qual santo combina com o seu filho?</title>
+<title>Qual santo tem o jeitinho do seu filho?</title>
 <style>
 :root{--creme:#fff8ec;--ceu:#cfe8f7;--ceu2:#a9d3ee;--dourado:#d9a93a;--dourado2:#b88a1c;--texto:#3b3a44;--card:#ffffff}
 *{box-sizing:border-box}
@@ -35,6 +35,22 @@ button:focus-visible{outline:3px solid var(--dourado);outline-offset:2px}
 .primario:active{background:var(--dourado2)}
 .sep{border:0;border-top:2px dashed #f0dfae;margin:18px 0}
 [hidden]{display:none!important}
+.hq{margin:22px 0 6px}
+.hq h3{font-size:1.25rem;line-height:1.3;margin:0 0 6px;text-align:center}
+.hq .intro{text-align:center;margin:0 0 14px;font-size:1rem}
+.previa{display:block;background:#fdf1cc;border-radius:12px;padding:8px 12px;font-size:.9rem;text-align:center;margin:0 0 14px}
+.quadro{margin:0 0 18px;background:#fffdf7;border:2px solid #f3e3b8;border-radius:18px;overflow:hidden}
+.quadro img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:#f6ecd3}
+.quadro figcaption{padding:10px 14px 12px;font-size:1rem;line-height:1.4}
+.quadro figcaption b{color:var(--dourado2)}
+.oferta{background:linear-gradient(180deg,#fff6dc,#fdebc0);border:2px solid var(--dourado);border-radius:20px;padding:18px 16px;text-align:center;margin:8px 0 16px}
+.oferta h3{font-size:1.3rem;margin:0 0 6px}
+.oferta p{margin:6px 0}
+.preco{font-size:2rem;font-weight:800;color:var(--dourado2);margin:4px 0 10px}
+.breve{background:#fff;border-radius:14px;padding:12px;font-size:1rem;margin:4px 0 6px}
+.priv{font-size:.88rem;color:#6b6a74;margin:8px 0 0}
+.livro{background:#eef7fd;border-radius:16px;padding:14px;font-size:1rem;margin:0 0 6px;text-align:center}
+.livro b{display:block;font-size:1.1rem;margin-bottom:4px}
 </style>
 </head>
 <body>
@@ -153,8 +169,8 @@ if (typeof document !== "undefined") {
     sexo = null; atual = 0; respostas = [];
     limpar();
     tela.appendChild(el("div","cruz","✝"));
-    tela.appendChild(el("h1",null,"Qual santo combina com o seu filho?"));
-    tela.appendChild(el("p","sub","10 perguntas rápidas para descobrir o santo que tem o jeitinho da sua criança"));
+    tela.appendChild(el("h1",null,"Qual santo tem o jeitinho do seu filho?"));
+    tela.appendChild(el("p","sub","10 perguntas rápidas sobre a sua criança. No fim, você conhece o santo que combina com ela e vê um pedacinho da história dele."));
     tela.appendChild(el("h2",null,"É menino ou menina?"));
     const box = el("div","sexo");
     [["m","Menino"],["f","Menina"]].forEach(([v,t]) => {
@@ -210,12 +226,53 @@ if (typeof document !== "undefined") {
       box.appendChild(el("p",null,b[t]));
     }
     tela.appendChild(box);
+    tela.appendChild(quadrinhos(r.topo));
     tela.appendChild(el("div","aviso",AVISO));
     const bt = el("button","primario","Refazer o quiz"); bt.type = "button";
     bt.onclick = inicio;
     tela.appendChild(bt);
     registrar(r);
   }
+
+
+const HQ_FRANCISCO = [
+  ["img/quadro1.webp","Os passarinhos","Num campo florido, Francisco falou aos passarinhos sobre o amor de Deus. Eles ficaram quietinhos, ouvindo, e só voaram depois da bênção."],
+  ["img/quadro2.webp","O lobo de Gubbio","Um lobo assustava a cidade de Gubbio. Francisco foi conversar com ele sem medo, e o lobo ficou manso e virou amigo de todos."],
+  ["img/quadro3.webp","Os pobres","Francisco deixou suas riquezas para viver com simplicidade. Repartia o pão com quem tinha fome, sempre com um sorriso."],
+  ["img/quadro4.webp","O presépio de Greccio","Num Natal, em Greccio, ele montou o primeiro presépio, com boi e burrinho de verdade, para todos verem como Jesus nasceu pobrezinho."]
+];
+
+function quadrinhos(rTopo){
+  const filho = sexo === "f" ? "sua filha" : "seu filho";
+  const sec = el("section","hq");
+  sec.appendChild(el("h3",null,"Uma criança acompanhou São Francisco nesta história..."));
+  sec.appendChild(el("p","intro","Mas quem era ela? Olhe o lugar guardado ao lado do santo em cada quadro."));
+  const ehFrancisco = rTopo.length === 1 && rTopo[0] === "criacao" && sexo !== "f";
+  if (!ehFrancisco) sec.appendChild(el("span","previa","Prévia: por enquanto mostramos a história de São Francisco de Assis. A do santo de " + (sexo === "f" ? "sua filha" : "seu filho") + " vem em breve."));
+  HQ_FRANCISCO.forEach(([src, tit, leg], k) => {
+    const f = el("figure","quadro");
+    const img = el("img"); img.src = src; img.alt = "Quadro " + (k+1) + ": " + tit + ", com o espaço vazio da criança ao lado de São Francisco";
+    img.width = 768; img.height = 768; img.loading = k === 0 ? "eager" : "lazy";
+    f.appendChild(img);
+    const c = el("figcaption"); c.appendChild(el("b",null,(k+1) + ". " + tit + ". ")); c.appendChild(document.createTextNode(leg));
+    f.appendChild(c); sec.appendChild(f);
+  });
+  const of = el("div","oferta");
+  of.appendChild(el("h3",null,"Coloque " + filho + " nesta história"));
+  of.appendChild(el("p",null,"Você envia uma foto e " + (sexo === "f" ? "ela aparece" : "ele aparece") + " ilustrad" + (sexo === "f" ? "a" : "o") + " ao lado do santo, no lugar do ponto de interrogação."));
+  of.appendChild(el("p","preco","R$ 7"));
+  const bt = el("button","primario","Quero " + (sexo === "f" ? "minha filha" : "meu filho") + " na história"); bt.type = "button";
+  const msg = el("div","breve","Em breve! Estamos preparando essa novidade com muito carinho."); msg.hidden = true; msg.setAttribute("role","status");
+  bt.onclick = () => { msg.hidden = false; };
+  of.appendChild(bt); of.appendChild(msg);
+  of.appendChild(el("p","priv","A foto seria usada só para fazer a ilustração e apagada logo depois, sempre com o consentimento do pai, da mãe ou do responsável."));
+  sec.appendChild(of);
+  const lv = el("div","livro");
+  lv.appendChild(el("b",null,"Em breve: o livro completo"));
+  lv.appendChild(document.createTextNode("A história inteira do santo, com " + filho + " como personagem, em versão digital e impressa."));
+  sec.appendChild(lv);
+  return sec;
+}
 
   function registrar(r){
     if (!ENDPOINT) return;
