@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qual santo combina com o seu filho?</title>
+<style>
+:root{--creme:#fff8ec;--ceu:#cfe8f7;--ceu2:#a9d3ee;--dourado:#d9a93a;--dourado2:#b88a1c;--texto:#3b3a44;--card:#ffffff}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-x:hidden}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.45;color:var(--texto);background:linear-gradient(180deg,var(--ceu) 0,var(--creme) 260px,var(--creme) 100%);min-height:100vh}
+main{max-width:520px;margin:0 auto;padding:20px 16px 40px}
+.card{background:var(--card);border-radius:24px;padding:22px 18px;box-shadow:0 6px 20px rgba(120,100,40,.12);border:2px solid #f3e3b8}
+h1{font-size:1.65rem;line-height:1.2;margin:0 0 10px;text-align:center}
+h2{font-size:1.3rem;line-height:1.3;margin:12px 0 16px}
+.sub{text-align:center;margin:0 0 22px}
+.cruz{text-align:center;font-size:2rem;color:var(--dourado)}
+button{font:inherit;font-size:1.05rem;cursor:pointer;min-height:56px;width:100%;border-radius:18px;border:2px solid var(--ceu2);background:#f3faff;color:var(--texto);padding:12px 16px;text-align:left;margin:0 0 12px;transition:transform .08s,background .15s}
+button:active{transform:scale(.98);background:var(--ceu)}
+button:focus-visible{outline:3px solid var(--dourado);outline-offset:2px}
+.sexo{display:flex;gap:12px}
+.sexo button{text-align:center;font-weight:700;font-size:1.2rem;min-height:72px;margin:0}
+.prog{height:12px;background:#f3e3b8;border-radius:8px;overflow:hidden;margin:4px 0 6px}
+.prog i{display:block;height:100%;background:var(--dourado);border-radius:8px;transition:width .25s}
+.ptxt{font-size:.95rem;margin:0 0 6px;color:#6b6a74}
+.opt b{color:var(--dourado2);margin-right:8px}
+.voltar{background:transparent;border:2px solid #e3d5ac;text-align:center;min-height:52px;margin-top:6px}
+.res{text-align:center}
+.emoji{font-size:3rem;margin:0}
+.res h2{font-size:1.6rem;margin:6px 0 4px}
+.virt{display:inline-block;background:#fdf1cc;border-radius:999px;padding:6px 16px;font-weight:700;margin:6px 0 12px;font-size:1rem}
+.res p{margin:8px 0}
+.aviso{background:#eef7fd;border-radius:16px;padding:14px;font-size:1rem;margin:20px 0 16px;text-align:left}
+.primario{background:var(--dourado);border-color:var(--dourado2);color:#fff;font-weight:700;text-align:center}
+.primario:active{background:var(--dourado2)}
+.sep{border:0;border-top:2px dashed #f0dfae;margin:18px 0}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <section id="tela" class="card" aria-live="polite"></section>
+</main>
+<script>
+const ENDPOINT = "";
+
+const PERFIS = {
+  criacao:{nome:"Criação",virtude:"cuidado com a natureza",emoji:"🌿",m:"São Francisco de Assis",f:"Santa Kateri Tekakwitha",
+    tm:"Ama bichos e plantas, como São Francisco de Assis, padroeiro da ecologia.",
+    tf:"Ama bichos e plantas, como Santa Kateri Tekakwitha, padroeira da ecologia."},
+  paz:{nome:"Paz",virtude:"oração e silêncio",emoji:"🕊️",m:"São Bento",f:"Santa Clara",
+    tm:"É calmo, observador e gosta de silêncio e de coisas bonitas, do jeitinho de São Bento.",
+    tf:"É calma, observadora e gosta de silêncio e de coisas bonitas, do jeitinho de Santa Clara."},
+  coragem:{nome:"Coragem",virtude:"coragem",emoji:"🛡️",m:"São Jorge",f:"Santa Joana d'Arc",
+    tm:"É corajoso e defende os outros, como São Jorge.",
+    tf:"É corajosa e defende os outros, como Santa Joana d'Arc."},
+  familia:{nome:"Família",virtude:"servir e cuidar",emoji:"🏡",m:"São José",f:"Santa Marta",
+    tm:"É prestativo, gosta de construir e de ajudar em casa, como São José.",
+    tf:"É prestativa, gosta de ajudar em casa e de cuidar de todo mundo, como Santa Marta."},
+  carinho:{nome:"Carinho",virtude:"pequenos gestos de amor",emoji:"💛",m:"São Francisco Marto",f:"Santa Teresinha",
+    tm:"Tem um coração terno, como São Francisco Marto, o pastorinho de Fátima que queria consolar Jesus.",
+    tf:"Tem um coração terno e vive de pequenos gestos de amor, como Santa Teresinha."},
+  alegria:{nome:"Alegria",virtude:"alegria",emoji:"🎈",m:"São João Bosco",f:"Santa Maria Mazzarello",
+    tm:"Espalha alegria e junta os amigos em volta, como São João Bosco, que fazia mágica e acrobacia para reunir os meninos.",
+    tf:"Espalha alegria e junta os amigos em volta, como Santa Maria Mazzarello, que fundou com Dom Bosco as irmãs salesianas."},
+  generosidade:{nome:"Generosidade",virtude:"generosidade",emoji:"🌹",m:"Santo Antônio",f:"Santa Isabel da Hungria",
+    tm:"Tem um coração aberto para os outros, como Santo Antônio, que pregou aos peixes e é padroeiro dos pobres.",
+    tf:"Tem um coração aberto para os outros, como Santa Isabel da Hungria, que levava pão aos pobres e viu o pão virar rosas."},
+  curiosidade:{nome:"Curiosidade",virtude:"inteligência a serviço de Deus",emoji:"🔭",m:"São Carlo Acutis",f:"Santa Hildegarda de Bingen",
+    tm:"Quer saber de tudo, como São Carlo Acutis, o adolescente que usava o computador para falar de Jesus (canonizado em 2025).",
+    tf:"Quer saber de tudo, como Santa Hildegarda de Bingen, que estudava plantas, escrevia e compunha música."}
+};
+const ORDEM = Object.keys(PERFIS);
+
+// Cada pergunta: [texto menino, texto menina]; cada alternativa: [menino, menina, perfil1, perfil2]
+const PERGUNTAS = [
+ [["No tempo livre, ele prefere...","No tempo livre, ela prefere..."],[
+  ["brincar com bichos e plantas","brincar com bichos e plantas","criacao","paz"],
+  ["ser herói, lutar de espadinha","ser heroína, lutar de espadinha","coragem","alegria"],
+  ["montar, construir, jogar no computador","montar, construir, jogar no computador","familia","curiosidade"],
+  ["ouvir história, brincar quietinho","ouvir história, brincar quietinha","carinho","generosidade"]]],
+ [["Quando um amigo está triste, ele...","Quando um amigo está triste, ela..."],[
+  ["vai abraçar","vai abraçar","carinho","criacao"],
+  ["faz palhaçada para o amigo rir","faz palhaçada para o amigo rir","alegria","curiosidade"],
+  ["defende o amigo se alguém implicou","defende o amigo se alguém implicou","coragem","familia"],
+  ["empresta o brinquedo ou divide o lanche","empresta o brinquedo ou divide o lanche","generosidade","paz"]]],
+ [["Ele é mais...","Ela é mais..."],[
+  ["agitado, não para quieto","agitada, não para quieta","alegria","coragem"],
+  ["calmo e observador","calma e observadora","paz","criacao"],
+  ["falante, conta tudo","falante, conta tudo","generosidade","curiosidade"],
+  ["carinhoso, gosta de colo","carinhosa, gosta de colo","carinho","familia"]]],
+ [["Do que ele mais gosta?","Do que ela mais gosta?"],[
+  ["animais","animais","criacao","generosidade"],
+  ["cavaleiros, heroínas e dragões","cavaleiros, heroínas e dragões","coragem","carinho"],
+  ["jogos e truques de mágica","jogos e truques de mágica","curiosidade","alegria"],
+  ["olhar as estrelas, a igreja em silêncio","olhar as estrelas, a igreja em silêncio","paz","familia"]]],
+ [["Na hora de ajudar em casa, ele...","Na hora de ajudar em casa, ela..."],[
+  ["ajuda sem ninguém pedir","ajuda sem ninguém pedir","familia","carinho"],
+  ["ajuda se virar brincadeira","ajuda se virar brincadeira","alegria","criacao"],
+  ["arruma tudo do jeitinho dele","arruma tudo do jeitinho dela","curiosidade","paz"],
+  ["cuida dos irmãos menores","cuida dos irmãos menores","generosidade","coragem"]]],
+ [["Diante de uma coisa nova, ele...","Diante de uma coisa nova, ela..."],[
+  ["vai na frente, sem medo","vai na frente, sem medo","coragem","criacao"],
+  ["chama os amigos para ir junto","chama os amigos para ir junto","alegria","generosidade"],
+  ["observa primeiro, depois vai","observa primeiro, depois vai","paz","curiosidade"],
+  ["segura a mão de alguém de confiança","segura a mão de alguém de confiança","carinho","familia"]]],
+ [["Se ganha um doce, ele...","Se ganha um doce, ela..."],[
+  ["divide na hora","divide na hora","generosidade","criacao"],
+  ["guarda para dar a alguém especial","guarda para dar a alguém especial","carinho","paz"],
+  ["troca e inventa um jogo","troca e inventa um jogo","alegria","curiosidade"],
+  ["guarda com cuidado","guarda com cuidado","familia","coragem"]]],
+ [["Quando crescer, ele quer...","Quando crescer, ela quer..."],[
+  ["proteger ou construir: bombeiro, policial, construtor","proteger ou construir: bombeira, policial, construtora","coragem","familia"],
+  ["cuidar de bichos e da natureza","cuidar de bichos e da natureza","criacao","paz"],
+  ["ensinar","ensinar","alegria","generosidade"],
+  ["cuidar de quem está doente","cuidar de quem está doente","carinho","curiosidade"]]],
+ [["Na missa ou na hora de rezar, ele...","Na missa ou na hora de rezar, ela..."],[
+  ["fica olhando para o altar","fica olhando para o altar","curiosidade","paz"],
+  ["canta alto e se mexe","canta alto e se mexe","alegria","criacao"],
+  ["faz perguntas sobre Deus","faz perguntas sobre Deus","generosidade","familia"],
+  ["pede proteção para a família","pede proteção para a família","coragem","carinho"]]],
+ [["Qual frase é a cara dele?","Qual frase é a cara dela?"],[
+  ["“Deixa que eu protejo!”","“Deixa que eu protejo!”","coragem","familia"],
+  ["“Vem brincar comigo!”","“Vem brincar comigo!”","alegria","curiosidade"],
+  ["“Olha que bonito!”","“Olha que bonito!”","criacao","carinho"],
+  ["“Toma, é pra você.”","“Toma, é pra você.”","generosidade","paz"]]]
+];
+
+const AVISO = "Este quiz é uma brincadeira para a sua família conhecer os santos e as virtudes deles. Ele não é um discernimento espiritual: todo santo é exemplo para todas as crianças.";
+const LETRAS = "abcd";
+
+function calcular(respostas){
+  const pontos = {}; ORDEM.forEach(id => pontos[id] = 0);
+  respostas.split("").forEach((l, i) => {
+    const alt = PERGUNTAS[i][1][LETRAS.indexOf(l)];
+    pontos[alt[2]]++; pontos[alt[3]]++;
+  });
+  const max = Math.max.apply(null, ORDEM.map(id => pontos[id]));
+  const topo = ORDEM.filter(id => pontos[id] === max);
+  return {pontos, topo: topo.slice(0, 2), empate: topo.length > 1};
+}
+
+function santoDe(id, sexo){ return PERFIS[id][sexo === "f" ? "f" : "m"]; }
+
+if (typeof document !== "undefined") {
+  const tela = document.getElementById("tela");
+  let sexo = null, atual = 0, respostas = [];
+
+  function el(tag, cls, txt){ const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function limpar(){ tela.innerHTML = ""; window.scrollTo(0, 0); }
+
+  function inicio(){
+    sexo = null; atual = 0; respostas = [];
+    limpar();
+    tela.appendChild(el("div","cruz","✝"));
+    tela.appendChild(el("h1",null,"Qual santo combina com o seu filho?"));
+    tela.appendChild(el("p","sub","10 perguntas rápidas para descobrir o santo que tem o jeitinho da sua criança"));
+    tela.appendChild(el("h2",null,"É menino ou menina?"));
+    const box = el("div","sexo");
+    [["m","Menino"],["f","Menina"]].forEach(([v,t]) => {
+      const b = el("button",null,t); b.type = "button";
+      b.onclick = () => { sexo = v; atual = 0; respostas = []; pergunta(); };
+      box.appendChild(b);
+    });
+    tela.appendChild(box);
+  }
+
+  function pergunta(){
+    limpar();
+    const i = atual, idx = sexo === "f" ? 1 : 0;
+    const [textos, alts] = PERGUNTAS[i];
+    tela.appendChild(el("p","ptxt","Pergunta " + (i+1) + " de " + PERGUNTAS.length));
+    const prog = el("div","prog"); prog.setAttribute("role","progressbar");
+    prog.setAttribute("aria-valuemin","0"); prog.setAttribute("aria-valuemax","10"); prog.setAttribute("aria-valuenow", String(i+1));
+    const barra = el("i"); barra.style.width = ((i+1)/PERGUNTAS.length*100) + "%"; prog.appendChild(barra);
+    tela.appendChild(prog);
+    tela.appendChild(el("h2",null,textos[idx]));
+    alts.forEach((a, k) => {
+      const b = el("button","opt"); b.type = "button";
+      b.appendChild(el("b",null,LETRAS[k] + ")"));
+      b.appendChild(document.createTextNode(a[idx]));
+      b.onclick = () => { respostas[i] = LETRAS[k]; if (i + 1 < PERGUNTAS.length) { atual = i + 1; pergunta(); } else resultado(); };
+      tela.appendChild(b);
+    });
+    const v = el("button","voltar","Voltar"); v.type = "button";
+    v.onclick = () => { if (i === 0) inicio(); else { respostas.length = i - 1; atual = i - 1; pergunta(); } };
+    tela.appendChild(v);
+  }
+
+  function resultado(){
+    limpar();
+    const r = calcular(respostas.join(""));
+    const box = el("div","res");
+    const t = sexo === "f" ? "tf" : "tm";
+    if (!r.empate) {
+      const p = PERFIS[r.topo[0]];
+      box.appendChild(el("p","emoji",p.emoji));
+      box.appendChild(el("p",null,sexo === "f" ? "A santa da sua filha é" : "O santo do seu filho é"));
+      box.appendChild(el("h2",null,santoDe(r.topo[0], sexo)));
+      box.appendChild(el("span","virt",(p.nome.toLowerCase() === p.virtude.toLowerCase() ? "Perfil " + p.nome : "Perfil " + p.nome + ": " + p.virtude)));
+      box.appendChild(el("p",null,p[t]));
+      box.appendChild(el("p",null,"Por isso " + santoDe(r.topo[0], sexo) + " combina tanto com " + (sexo === "f" ? "ela" : "ele") + ". Que seja uma companhia boa no caminho " + (sexo === "f" ? "dela" : "dele") + "."));
+    } else {
+      const a = PERFIS[r.topo[0]], b = PERFIS[r.topo[1]];
+      box.appendChild(el("p","emoji",a.emoji + " " + b.emoji));
+      box.appendChild(el("p",null,"Deu empate, e isso é lindo!"));
+      box.appendChild(el("h2",null,(sexo === "f" ? "Ela" : "Ele") + " tem o " + a.nome + " de " + santoDe(r.topo[0], sexo) + " e o " + b.nome + " de " + santoDe(r.topo[1], sexo)));
+      box.appendChild(el("span","virt",a.virtude + " e " + b.virtude));
+      box.appendChild(el("p",null,a[t]));
+      box.appendChild(el("p",null,b[t]));
+    }
+    tela.appendChild(box);
+    tela.appendChild(el("div","aviso",AVISO));
+    const bt = el("button","primario","Refazer o quiz"); bt.type = "button";
+    bt.onclick = inicio;
+    tela.appendChild(bt);
+    registrar(r);
+  }
+
+  function registrar(r){
+    if (!ENDPOINT) return;
+    try {
+      const corpo = JSON.stringify({ts:new Date().toISOString(), sexo:sexo, respostas:respostas.join(""), perfil:r.topo.join("+"), empate:r.empate, pontos:r.pontos});
+      const p = fetch(ENDPOINT, {method:"POST", mode:"no-cors", headers:{"Content-Type":"text/plain"}, body:corpo});
+      if (p && p.catch) p.catch(function(){});
+    } catch (e) {}
+  }
+
+  inicio();
+}
+if (typeof module !== "undefined") module.exports = {calcular, santoDe, PERFIS, PERGUNTAS};
+</script>
+</body>
+</html>
