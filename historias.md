@@ -212,3 +212,47 @@ Fonte principal: site oficial do Instituto das Filhas de Maria Auxiliadora, http
 4. **Com Dom Bosco, as Filhas de Maria Auxiliadora** (`img/mazzarello4.webp`)
    Com Dom Bosco, Maria fundou as Filhas de Maria Auxiliadora. Em 05/08/1872, em Mornese, as primeiras irmãs se consagraram a Deus, e Madre Mazzarello cuidava de todas com uma alegria serena.
    Fontes: cgfmanet.org ("Confondatrice, insieme a Don Bosco, dell'Istituto delle Figlie di Maria Ausiliatrice"; "Il 5 agosto 1872 le prime undici giovani emettono la Professione Religiosa"; "collegio appena costruito a Mornese"; "suor Maria Mazzarello come Superiora"; "il dono dell'allegria serena e rasserenante"); sdb.org, The Priest of Young People. A bênção de Dom Bosco na imagem é liberdade da ilustração; a legenda não diz que ele estava presente na cerimônia.
+
+## Santo Antônio de Pádua (de Lisboa) (perfil Generosidade, menino)
+
+Nasceu em Lisboa por volta de 1195, batizado como Fernando, de família nobre que morava perto da Sé; estudou na escola da catedral, entrou nos Cônegos Regrantes de Santo Agostinho (São Vicente, depois Santa Cruz de Coimbra) e em 1220 virou frade franciscano com o nome de Antônio. Doutor da Igreja (1946). Ficaram de fora a doença, a morte e os milagres com cenas pesadas. Quadro 1 mostra o menino Fernando de roupa medieval; quadros 2 a 4, o frade de hábito marrom com cordão e tonsura.
+Fontes principais: Bento XVI, Audiência Geral de 10/02/2010, https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100210.html ; Catholic Encyclopedia, "St. Anthony of Padua", https://www.newadvent.org/cathen/01556a.htm .
+
+1. **O menino Fernando em Lisboa** (`img/antonio1.webp`)
+   Antônio nasceu em Lisboa e, no batismo, recebeu o nome de Fernando. A família morava perto da catedral, a Sé, e foi lá que ele estudou quando menino.
+   Fontes: newadvent ("born at Lisbon, 1195"; "He received in baptism the name of Ferdinand"; "living near the Cathedral of Lisbon"; "Having been educated in the Cathedral school"); Bento XVI ("born into a noble family in Lisbon in about 1195 and was baptized with the name of Fernando"). A cena dele rezando na Sé é ilustração; a legenda diz só que morava perto e estudou lá.
+
+2. **O frade que amava a Bíblia** (`img/antonio2.webp`)
+   Fernando estudou muito a Bíblia e virou frade franciscano com o nome de Antônio. São Francisco gostou tanto dele que pediu que ele ensinasse os outros frades sobre Deus.
+   Fontes: Bento XVI ("dedicated himself with interest and solicitude to the study of the Bible"; "having taken the name of Anthony"; carta de Francisco: "I would like you to teach the brethren theology"); newadvent (carta de 1224 "It is my pleasure that thou teach theology to the brethren"). O estudo da Bíblia começou ainda como cônego em Coimbra; a imagem mostra o frade.
+
+3. **O sermão aos peixes** (`img/antonio3.webp`)
+   Conta a tradição que, um dia, Antônio foi falar de Deus na beira da água, e os peixes vieram todos e puseram a cabeça para fora, como se escutassem com atenção.
+   Fonte: newadvent ("the famous sermon to the fishes on the bank of the river Brenta in the neighbourhood of Padua; not at Padua, as is generally supposed"). A tradição mais conhecida (Fioretti) põe o sermão em Rimini, à beira-mar; a Catholic Encyclopedia diz rio Brenta, perto de Pádua. Como as fontes discordam, a legenda não diz o lugar, e a imagem mostra só "a água".
+
+4. **O Menino Jesus no colo** (`img/antonio4.webp`)
+   Conta-se que, um dia, o Menino Jesus apareceu para Antônio, e ele o pegou no colo com muito carinho. Por isso as imagens de Santo Antônio mostram o Menino Jesus nos braços dele.
+   Fontes: Bento XVI ("with the Child Jesus in his arms, in memory of a miraculous apparition mentioned in several literary sources"); newadvent ("the celebrated apparition of the Infant Jesus to our saint"; lugar disputado entre Châteauneuf-la-Forêt e Camposampiero, "the existing documents, however, do not decide the question"). Lugar e hora não confirmados: ficaram fora da legenda (a luz noturna da imagem é liberdade da ilustração).
+
+Ficou de fora: o "pão dos pobres" (Pão de Santo Antônio). É devoção popular posterior; não achei, nas fontes acima, relato da vida dele com essa cena, então preferi não usar.
+
+## Santa Isabel da Hungria (de Turíngia) (perfil Generosidade, menina)
+
+Nasceu em 1207, filha do rei André II da Hungria; aos 4 anos foi levada para a corte da Turíngia, no castelo de Wartburg (perto de Eisenach, Alemanha); casou com Luís IV em 1221; em 1228 recebeu a roupa da Ordem Terceira de São Francisco e construiu o hospital de Marburg; canonizada em 1235. Ficaram de fora a morte da mãe, do marido e a dela, a expulsão do castelo e as doenças graves. Quadros 1 e 2 com roupa de princesa, véu e coroa simples; quadros 3 e 4 com roupa simples de terciária, sem coroa.
+Fontes principais: Bento XVI, Audiência Geral de 20/10/2010, https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20101020.html ; Catholic Encyclopedia, "St. Elizabeth of Hungary", https://www.newadvent.org/cathen/05389a.htm .
+
+1. **A princesa do castelo de Wartburg** (`img/isabel1.webp`)
+   Isabel era princesa e morava no castelo de Wartburg, na Alemanha. Ela dava comida e bebida a quem batia na porta e descia do castelo para levar pão aos pobres.
+   Fontes: Bento XVI ("the Fortress of Wartburg"; "she would give food and drink to those who knocked at her door"; "Coming down from her castle, she often visited the homes of the poor [...] bringing them bread, meat, flour and other food"); newadvent ("the gentle and charitable châtelaine of the Wartburg"; "she aided nine hundred poor daily").
+
+2. **O pão que virou rosas** (`img/isabel2.webp`)
+   Conta a tradição que Isabel levava pão escondido no avental para os pobres e encontrou o marido no caminho. Quando ela abriu o avental, em vez de pão, estava cheio de rosas lindas!
+   Fontes: Bento XVI ("while Elizabeth was on her way with her apron filled with bread for the poor, she met her husband [...] instead of bread, it was full of magnificent roses"); newadvent ("according to a legend, which is, however, related of other saints as well"). Por ser lenda, a legenda abre com "conta a tradição". O marido sem armadura nem espada.
+
+3. **Uma vida simples** (`img/isabel3.webp`)
+   Isabel deixou as roupas de princesa e passou a vestir a roupa simples da Ordem Terceira de São Francisco. Ela vivia pobre e trabalhava com as próprias mãos: fiava, cozinhava e cuidava de quem precisava.
+   Fontes: newadvent ("received from him the dress of the Third Order of St. Francis, thus being among the first tertiaries of Germany", Sexta-feira Santa de 1228); Bento XVI ("Elizabeth worked wherever she was welcomed, looked after the sick, spun thread and cooked"). O texto de Bento XVI põe o fiar no tempo logo depois de sair do castelo; a legenda não fala da expulsão nem da viuvez.
+
+4. **O hospital de Marburg** (`img/isabel4.webp`)
+   Em Marburg, Isabel construiu um hospital e cuidava dos doentes todos os dias, com muito carinho. Ela mesma servia a comida aos mais pobres.
+   Fontes: newadvent ("In the summer of 1228 she built the Franciscan hospital at Marburg and on its completion devoted herself entirely to the care of the sick"); Bento XVI, citando Conrado de Marburg ("Shortly afterwards she built a hospital, gathered the sick and invalids and served at her own table the most wretched and deprived"). Sem feridas na imagem.
