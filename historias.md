@@ -169,3 +169,46 @@ A Catholic Encyclopedia (newadvent) não tem artigo dela no endereço tentado, e
 4. **A chuva de rosas** (`img/teresinha4.webp`)
    Teresinha prometeu fazer cair uma chuva de rosas e passar o seu céu fazendo o bem na terra. Por isso ela é pintada com rosas.
    Fontes: História de uma Alma, Epílogo, https://ccel.org/ccel/therese/autobio/autobio.xx.html ("I WILL LET FALL A SHOWER OF ROSES"; "I WILL SPEND MY HEAVEN IN DOING GOOD UPON EARTH"); João Paulo II, 19/10/1997 ("«passar o seu Céu fazendo o bem sobre a terra»"). A frase completa no original começa com "depois da minha morte"; a legenda usa só a promessa, sem falar de morte.
+
+## São João Bosco (perfil Alegria, menino)
+
+Nasceu em 16/08/1815 nos Becchi, perto de Castelnuovo d'Asti (Piemonte, Itália); padre em 1841. Ficaram de fora os atentados contra ele (o Grigio aparece só acompanhando Dom Bosco, sem briga) e a morte. Os quadros 1 e 2 mostram o menino camponês; os quadros 3 e 4, o padre de batina preta.
+Fontes principais: Dom Bosco, "Memórias do Oratório de São Francisco de Sales" (trad. inglesa de Daniel Lyons, SDB), PDF oficial em https://archive.sdb.org/ENG/Documenti/2004/pdf/_2_10_6_4_17_.pdf (sumário em https://www.sdb.org/en/Don_Bosco/Writings/Writings/Memoirs_of_the_Oratory_of_Saint_Francis_de_Sales_1815_1855 ); sdb.org, "The Priest of Young People", https://www.sdb.org/en/Don_Bosco/Don_Bosco/The_Priest_of_Young_People ; sdb.org, "First Dream", https://www.sdb.org/en/Don_Bosco/Don_Bosco/First_Dream ; Catholic Encyclopedia, "St. Giovanni Melchior Bosco", https://www.newadvent.org/cathen/02689d.htm .
+Britannica deu 403 e a página do vatican.va tentada deu 404.
+
+1. **O pequeno acrobata dos Becchi** (`img/bosco1.webp`)
+   Nos Becchi, Joãozinho amarrava uma corda entre uma pereira e outra árvore. Antes do show, chamava os amigos para rezar o terço e repetia o que tinha ouvido do Evangelho na missa; depois andava e dançava na corda, fazia mágicas e acrobacias.
+   Fontes: Memórias do Oratório, cap. 3 ("At Becchi there was a field in which grew several trees. One of them, a pear tree [...] I used to sling a rope from it to another tree"; "I would invite them to recite the rosary and sing a hymn. Then standing on the chair, I preached to them or, better, repeated as much as I could remember from the explanation of the gospel I had heard in church that morning"; "I walked the tightrope like an ordinary path, jumped and danced on it"); sdb.org, The Priest of Young People ("John sought to learn how to be an acrobat, a magician, a singer, a juggler in order to attract his companions to himself").
+
+2. **O sonho dos 9 anos** (`img/bosco2.webp`)
+   Aos 9 anos, Joãozinho sonhou com muitos meninos e bichos bravos que se transformavam em cordeirinhos mansos. Uma Senhora lhe mostrou que devia ganhar os amigos com bondade e amor, e não com brigas.
+   Fontes: sdb.org, First Dream ("It was at that age (9) that I had a dream"; "You will have to win these friends of yours not by blows but by gentleness and love"; "where before I had seen wild animals, I now saw gentle lambs"; "a lady of stately appearance"); Memórias do Oratório, trecho "A Dream" do início do livro (mesmo relato). Os bichos citados no texto são "goats, dogs, cats, bears and other animals"; lobos não são nomeados no primeiro sonho, por isso a legenda diz "bichos bravos". A legenda deixa claro que foi um sonho.
+
+3. **O oratório de Turim** (`img/bosco3.webp`)
+   Já padre, Dom Bosco reunia os meninos de Turim no oratório, em Valdocco: eles brincavam, aprendiam o catecismo e rezavam juntos. O oratório começou em 08/12/1841 e tinha o nome de São Francisco de Sales.
+   Fontes: Catholic Encyclopedia ("On the eighth of December, 1841, the feast of the Immaculate Conception"; "was sown the first seed of the 'Oratory'"; capela "dedicated to St. Francis de Sales"; "breakfast would then be eaten, followed by games; and in the afternoon Vespers would be chanted"); sdb.org, The Priest of Young People ("he managed to settle on the outskirts of Turin at Valdocco and open his first Oratory"; "to let them play and so he could instruct them in the Catechism").
+
+4. **Grigio, o cão amigo** (`img/bosco4.webp`)
+   Conta o próprio Dom Bosco que, quando ele voltava sozinho à noite para o oratório, um grande cão cinzento aparecia ao seu lado e o acompanhava até em casa. Ele o chamava de Grigio (cinzento) e dizia que o cão o protegeu muitas vezes.
+   Fonte: Memórias do Oratório, cap. 63 "Grigio" ("One dark evening, rather late, I was making my way home [...] when a huge dog appeared beside me"; "he accompanied me as far as the Oratory. Many other times that evening's experience was repeated. Indeed, I may say that Grigio did me valuable service"; nota 1: "Because of the dog's gray fur Don Bosco named him 'Grigio'"). Os episódios dos ataques (homens que o agarraram em 1854) ficaram fora da imagem e da legenda. A legenda usa "conta" porque o fato é relato do próprio santo, sem prova independente.
+
+## Santa Maria Mazzarello (perfil Alegria, menina)
+
+Maria Domingas Mazzarello nasceu em 09/05/1837 em Mornese (Piemonte, Itália), numa família numerosa de camponeses; cofundadora, com Dom Bosco, das Filhas de Maria Auxiliadora (salesianas) em 05/08/1872; canonizada em 24/06/1951. Ficaram de fora o tifo de 1860 e a morte. Quadros 1 a 3 com roupa camponesa simples; quadro 4 com o hábito preto das Filhas de Maria Auxiliadora.
+Fonte principal: site oficial do Instituto das Filhas de Maria Auxiliadora, https://www.cgfmanet.org/maria-domenica-mazzarello/ . Dom Bosco cofundador confirmado também em sdb.org, The Priest of Young People ("with Saint Mary Domenica Mazzarello he founded the Institute of the Daughters of Mary Help of Christians"). Britannica deu 403; o vatican.va tentado deu 403.
+
+1. **Menina do campo em Mornese** (`img/mazzarello1.webp`)
+   Maria era de uma família grande de camponeses de Mornese. Desde menina trabalhava no campo com o pai, José, e aprendeu em casa a amar muito a Deus.
+   Fonte: cgfmanet.org ("nasce in una numerosa famiglia di contadini"; "fin da ragazza lavora nei campi con il padre Giuseppe"; "In famiglia viene formata a un profondo senso di Dio"). O texto fala de "campos"; as parreiras da imagem vêm da foto do mesmo site, "I Vignati della Valponasca" (as vinhas da família). A legenda diz só "campo".
+
+2. **A oficina de costura** (`img/mazzarello2.webp`)
+   Maria aprendeu a ser costureira e abriu uma oficina para ensinar as meninas pobres a costurar e, mais ainda, a conhecer e amar a Deus.
+   Fonte: cgfmanet.org ("impara il mestiere di sarta per insegnare alle ragazze povere non solo a cucire, ma soprattutto a conoscere ad amare Dio"; "aprendo un laboratorio di cucito, un oratorio festivo e poi una casa per le bambine senza famiglia").
+
+3. **A casa cheia de meninas** (`img/mazzarello3.webp`)
+   Conta-se que, um dia, Maria viu como numa visão um grande prédio com muitas meninas correndo no pátio, e ouviu uma voz: "A ti eu as confio".
+   Fonte: cgfmanet.org ("in una visione misteriosa, vede un grande edificio con tante ragazze che corrono nel cortile, e sente una voce: A te le affido"). Lugar (Borgoalto) e ano não foram confirmados; ficaram fora. No site, a visão vem depois de ela sarar do tifo; a legenda não fala da doença.
+
+4. **Com Dom Bosco, as Filhas de Maria Auxiliadora** (`img/mazzarello4.webp`)
+   Com Dom Bosco, Maria fundou as Filhas de Maria Auxiliadora. Em 05/08/1872, em Mornese, as primeiras irmãs se consagraram a Deus, e Madre Mazzarello cuidava de todas com uma alegria serena.
+   Fontes: cgfmanet.org ("Confondatrice, insieme a Don Bosco, dell'Istituto delle Figlie di Maria Ausiliatrice"; "Il 5 agosto 1872 le prime undici giovani emettono la Professione Religiosa"; "collegio appena costruito a Mornese"; "suor Maria Mazzarello come Superiora"; "il dono dell'allegria serena e rasserenante"); sdb.org, The Priest of Young People. A bênção de Dom Bosco na imagem é liberdade da ilustração; a legenda não diz que ele estava presente na cerimônia.
