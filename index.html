@@ -152,9 +152,17 @@ function calcular(respostas){
     pontos[alt[2]]++; pontos[alt[3]]++;
   });
   const max = Math.max.apply(null, ORDEM.map(id => pontos[id]));
-  const topo = ORDEM.filter(id => pontos[id] === max);
-  return {pontos, topo: topo.slice(0, 2), empate: topo.length > 1};
+  let topo = ORDEM.filter(id => pontos[id] === max);
+  // Desempate: vence o perfil empatado que apareceu na resposta mais recente (sempre um santo só).
+  for (let i = respostas.length - 1; topo.length > 1 && i >= 0; i--) {
+    const alt = PERGUNTAS[i][1][LETRAS.indexOf(respostas[i])];
+    const achou = [alt[2], alt[3]].find(id => topo.includes(id));
+    if (achou) topo = [achou];
+  }
+  return {pontos, topo: topo.slice(0, 1), empate: false};
 }
+
+function comArtigo(nome){ return (nome === "Carinho" ? "o " : "a ") + nome.toLowerCase(); }
 
 function santoDe(id, sexo){ return PERFIS[id][sexo === "f" ? "f" : "m"]; }
 
@@ -220,7 +228,7 @@ if (typeof document !== "undefined") {
       const a = PERFIS[r.topo[0]], b = PERFIS[r.topo[1]];
       box.appendChild(el("p","emoji",a.emoji + " " + b.emoji));
       box.appendChild(el("p",null,"Deu empate, e isso é lindo!"));
-      box.appendChild(el("h2",null,(sexo === "f" ? "Ela" : "Ele") + " tem o " + a.nome + " de " + santoDe(r.topo[0], sexo) + " e o " + b.nome + " de " + santoDe(r.topo[1], sexo)));
+      box.appendChild(el("h2",null,(sexo === "f" ? "Ela" : "Ele") + " tem " + comArtigo(a.nome) + " de " + santoDe(r.topo[0], sexo) + " e " + comArtigo(b.nome) + " de " + santoDe(r.topo[1], sexo)));
       box.appendChild(el("span","virt",a.virtude + " e " + b.virtude));
       box.appendChild(el("p",null,a[t]));
       box.appendChild(el("p",null,b[t]));
