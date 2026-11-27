@@ -256,3 +256,45 @@ Fontes principais: Bento XVI, Audiência Geral de 20/10/2010, https://www.vatica
 4. **O hospital de Marburg** (`img/isabel4.webp`)
    Em Marburg, Isabel construiu um hospital e cuidava dos doentes todos os dias, com muito carinho. Ela mesma servia a comida aos mais pobres.
    Fontes: newadvent ("In the summer of 1228 she built the Franciscan hospital at Marburg and on its completion devoted herself entirely to the care of the sick"); Bento XVI, citando Conrado de Marburg ("Shortly afterwards she built a hospital, gathered the sick and invalids and served at her own table the most wretched and deprived"). Sem feridas na imagem.
+
+## São Carlo Acutis (perfil Curiosidade, menino)
+
+Nasceu em Londres em 03/05/1991, de pais italianos, e em setembro de 1991 a família voltou para Milão. Primeira Comunhão aos 7 anos (16/06/1998), com licença especial; desde então ia à missa todo dia. Canonizado por Leão XIV em 07/09/2025. Ficaram de fora a leucemia, o hospital e a morte (12/10/2006). Nos 4 quadros ele é adolescente, cabelo castanho escuro, camiseta lisa, jeans e tênis, sem marca; computador genérico sem logotipo.
+Fontes principais: Fundação Carlo Acutis, https://www.fondazionecarloacutis.org/en/the-saint/ ; Associação Carlo Acutis, https://www.carloacutis.com/en/association/chiecarloacutis ; Vatican News, 10/10/2020, https://www.vaticannews.va/en/church/news/2020-10/carlo-acutis-blessed-assisi-eucharist-patron-internet.html .
+
+1. **A estrada para o céu** (`img/carlo1.webp`)
+   Desde a Primeira Comunhão, aos 7 anos, Carlo ia à missa todos os dias e ficava um pouquinho rezando diante de Jesus na Eucaristia. Ele dizia: "A Eucaristia é a minha estrada para o céu!"
+   Fontes: carloacutis.com ("admitted to First Communion at only seven years and since then he has never missed the daily appointment with Holy Mass and a little of Eucharistic adoration, before or after Mass"); Vatican News ("Carlo's true passion was the Eucharist: 'his highway to heaven'"). O ostensório no altar é liberdade da ilustração para mostrar a adoração.
+
+2. **O computador a serviço de Jesus** (`img/carlo2.webp`)
+   Carlo adorava computador e aprendeu sozinho a programar. Com 11 anos, começou a pesquisar os milagres eucarísticos e montou um site e uma exposição para todo mundo conhecer Jesus na Eucaristia.
+   Fontes: Vatican News ("At the age of 11, Carlo began to investigate the Eucharistic miracles [...] create a website that traced that history"; exposição em mais de 10.000 paróquias); fondazionecarloacutis.org ("he used the internet to do apostolic works"; "He designed computer programs"). O número de painéis varia entre as fontes (136, 160, 196), por isso a legenda não dá número.
+
+3. **O saco de dormir para o amigo da rua** (`img/carlo3.webp`)
+   Com as próprias economias, Carlo comprou um saco de dormir para um senhor que dormia na rua, no caminho da missa. Ele levava comida e bebida quente para quem não tinha casa.
+   Fontes: Vatican News ("He used his first savings to buy a sleeping bag for a homeless man he often saw on the way to Mass"); NCRegister, entrevista com a mãe ("he would go out to bring food and hot liquids to the homeless. With his weekly allowance, he bought covers and sleeping bags"). A garrafa térmica da imagem representa a "bebida quente".
+
+4. **Santo também se diverte** (`img/carlo4.webp`)
+   Carlo era muito alegre: jogava futebol com os amigos, gostava de videogame e fazia filminhos com seus cachorros e gatos. E, quando passeava com os cachorros, recolhia o lixo que via pelo caminho.
+   Fontes: fondazionecarloacutis.org ("He played soccer with his friends"; "He had fun with video games"; "made films with his dogs and cats"); Vatican News ("When he took the dogs out for a walk, he always picked up whatever garbage he came across"). Raças e número de cachorros não confirmados: a imagem não pretende retratar os cães reais.
+
+## Santa Hildegarda de Bingen (perfil Curiosidade, menina)
+
+Nasceu em 1098 em Bermersheim (Renânia, Alemanha), de família nobre; aos 8 anos foi entregue a Deus e confiada a Juta de Sponheim, no mosteiro beneditino de Disibodenberg; em 1136 sucedeu Juta como superiora; por volta de 1150 fundou o mosteiro de Rupertsberg, perto de Bingen. Proclamada Doutora da Igreja por Bento XVI em 07/10/2012. Ficaram de fora as doenças, a morte e o interdito do fim da vida. Quadro 1 com a menina de roupa medieval simples; quadros 2 a 4 com hábito beneditino preto e véu.
+Fontes principais: Bento XVI, Audiências Gerais de 01/09/2010 e 08/09/2010, https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100901.html e https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100908.html ; Bento XVI, Carta Apostólica de 07/10/2012, https://www.vatican.va/content/benedict-xvi/en/apost_letters/documents/hf_ben-xvi_apl_20121007_ildegarda-bingen.html ; Catholic Encyclopedia, "St. Hildegard", https://www.newadvent.org/cathen/07351a.htm ; Britannica, https://www.britannica.com/biography/Saint-Hildegard .
+
+1. **A menina no mosteiro** (`img/hildegarda1.webp`)
+   Quando Hildegarda tinha 8 anos, os pais a ofereceram a Deus, e ela foi morar no mosteiro de Disibodenberg, na Alemanha, com a monja Juta. Lá ela aprendeu a ler e a cantar os salmos.
+   Fontes: Bento XVI, 01/09/2010 ("At the age of eight she was offered for the religious state"; "entrusted [...] to Jutta of Spanheim [...] at the Benedictine Monastery of St Disibodenberg"); Carta Apostólica 2012 ("At the age of eight she was received as an oblate at the Benedictine Abbey of Disibodenberg"); newadvent ("She was taught to read and sing the Latin psalms"). Nas fontes ela foi primeiro cuidada pela viúva Uda; a legenda fala só de Juta.
+
+2. **As visões de luz** (`img/hildegarda2.webp`)
+   Desde pequena, Deus mostrava a Hildegarda coisas lindas em visões. Já adulta, ela contava o que via, e o monge Volmar escrevia tudo. Assim nasceram os livros dela.
+   Fontes: Carta Apostólica 2012 ("The Lord endowed her with a series of visions from childhood, whose content she dictated to the Benedictine monk Volmar"); Bento XVI, 01/09/2010 ("Hildegard began to dictate the mystical visions [...] to the monk Volmar"; "in 1147 [...] The Pope authorized the mystic to write down her visions"); Bento XVI, 08/09/2010 (Scivias, "You know the ways"). Por isso a cena mostra ela DITANDO, não escrevendo (newadvent diz que ela "never learned to write"). A forma da luz na imagem é ilustração.
+
+3. **O jardim das plantas que curam** (`img/hildegarda3.webp`)
+   Hildegarda gostava muito de estudar as plantas e tudo o que Deus criou. Ela escreveu livros sobre a natureza e sobre remédios para cuidar da saúde das pessoas.
+   Fontes: Bento XVI, 08/09/2010 ("Hildegard took an interest in medicine and in the natural sciences"); Carta Apostólica 2012 ("she also authored works on medicine and natural sciences"; Physica, Causae et Curae); Britannica ("two treatises on medicine and natural history"). As fontes não descrevem um jardim de ervas dela; o jardim é liberdade da ilustração, e a legenda fala só do estudo e dos livros.
+
+4. **A música do céu** (`img/hildegarda4.webp`)
+   Hildegarda também compunha música! Ela fez hinos e cantos para Deus, que as irmãs cantavam com alegria no mosteiro. Para ela, toda a criação era como uma grande sinfonia.
+   Fontes: Bento XVI, 08/09/2010 ("she composed hymns, antiphons and songs, gathered under the title: Symphonia Harmoniae Caelestium Revelationum [...] that were performed joyously in her monasteries"; "For her, the entire creation is a symphony of the Holy Spirit"). O mosteiro da cena é Rupertsberg (fundado por volta de 1150, Carta Apostólica 2012); a legenda não dá o nome.
